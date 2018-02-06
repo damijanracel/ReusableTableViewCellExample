@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="odL-5a-6ES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Users-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Users" id="BYZ-38-t0r" customClass="UsersViewController" customModule="ReusableTableViewCellExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="APT-mi-Kjq">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="APT-mi-Kjq" secondAttribute="bottom" id="4jt-Rx-w3i"/>
+                            <constraint firstItem="APT-mi-Kjq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VFJ-p4-KYc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="APT-mi-Kjq" secondAttribute="trailing" id="YXT-F9-1HM"/>
+                            <constraint firstItem="APT-mi-Kjq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bSQ-yH-9Qn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Users" image="user" id="EBP-ce-JOa"/>
+                    <connections>
+                        <outlet property="tableView" destination="APT-mi-Kjq" id="8ub-Zs-Qzz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-36" y="250"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="HEH-3j-ffl">
+            <objects>
+                <tabBarController id="odL-5a-6ES" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wET-5B-LQk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="VAB-lq-n3r" kind="relationship" relationship="viewControllers" id="fen-Kp-W7n"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="wl4-qG-ueL"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cx1-Z4-Wuk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-596" y="-554"/>
+        </scene>
+        <!--Pets-->
+        <scene sceneID="Azw-iF-iij">
+            <objects>
+                <viewController title="Pets" id="VAB-lq-n3r" customClass="PetsViewController" customModule="ReusableTableViewCellExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yZL-OM-XwI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ScO-74-nHI">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kGD-eD-3bF" firstAttribute="bottom" secondItem="ScO-74-nHI" secondAttribute="bottom" id="Kub-xX-AeN"/>
+                            <constraint firstItem="ScO-74-nHI" firstAttribute="top" secondItem="kGD-eD-3bF" secondAttribute="top" id="Rbi-Yz-q4f"/>
+                            <constraint firstItem="kGD-eD-3bF" firstAttribute="trailing" secondItem="ScO-74-nHI" secondAttribute="trailing" id="Xdi-36-r3y"/>
+                            <constraint firstItem="ScO-74-nHI" firstAttribute="leading" secondItem="kGD-eD-3bF" secondAttribute="leading" id="wfJ-T3-egJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kGD-eD-3bF"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pets" image="pet" id="OeZ-Xc-U67"/>
+                    <connections>
+                        <outlet property="tableView" destination="ScO-74-nHI" id="BAb-ig-IGd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8s7-Vu-Gsg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1175" y="250"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pet" width="29" height="29"/>
+        <image name="user" width="29" height="29"/>
+    </resources>
+</document>
